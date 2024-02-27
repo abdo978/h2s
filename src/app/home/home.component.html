@@ -1,0 +1,75 @@
+<div class="content">
+    <div class="container">
+        <div class="left">
+            <div class="text">
+                <h1>Hygiène & Sécurité Notre Mission</h1>
+                <p>Depuis 2018, notre compagnie
+                    vous accompagne à maintenir
+                    l'hygiène et la sécurité de vos
+                    espaces de travail, aussi de vos
+                    collaborateurs.</p>
+                <a>Voir produits</a>
+            </div>
+        </div>
+        <div class="right"></div>
+    </div>
+    <div class="card">
+        <div class="holder">
+            <h2>A propos de nous</h2>
+            <p>Une filiale du groupe H2S, créée pour répondre au grand besoin du marché d'hygiène et protection au Maroc en matière des Produits, Equipements, Service et Formation</p>
+            <a>Plus D'information</a>
+        </div>
+    </div>
+    <div class="famous_products">
+        <div class="title">
+            <h2>Tendance</h2>
+            <div class="border">
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="buttons">
+            <a>Produits</a>
+            <a>Services</a>
+            <a>Formations</a>
+        </div>
+        <div class="prods-wrapper">
+            <div class="prods">
+                <app-product-card class="prod" *ngFor="let produit of listeProduits" [title]="produit.name" [image]="produit.image"></app-product-card>
+            </div>
+        </div>
+    </div>
+
+    <div class="offers">
+        <div class="title">
+            <h2>Nos offres</h2>
+            <div class="border">
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="offres-services">
+
+            <div class="offre-card">
+                <mat-icon>local_mall</mat-icon>
+                <div class="description">
+                    nous fournissons des produits d'hygiène de haute qualité
+                </div>
+            </div>
+
+            <div class="offre-card">
+                <mat-icon>cleaning_services</mat-icon>
+                <div class="description">
+                    nous offrons également un service de désinfection et de nettoyage
+                </div>
+            </div>
+
+            <div class="offre-card">
+                <mat-icon>school</mat-icon>
+                <div class="description">
+                    Formation and consulting. Des professionneles vous aident
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
